@@ -114,7 +114,7 @@ def parseMehodName( src:Source, base_dir:String ):Option[List[MethodInfo]] = {
 }
 
 val map = new HashMap[PkgInfo, List[ClassInfo]]();
-val base_dir = "scala-2.7.5.final-devel-docs/api/"
+val base_dir = "scala-2.7.7.final-devel-docs/api/"
 for( file <- new Dir(base_dir).glob(".*\\.html".r) ){
   val src = new Source(new FileInputStream(file))
 
@@ -229,7 +229,7 @@ def makeProjectFile( base_dir:String, file:String ) {
              |Compiled file=scala_api.chm
              |Contents file=toc.hhc
              |Default Window=titlewindow
-             |Default topic=scala-2.7.5.final-devel-docs/api/root-content.html
+             |Default topic=scala-2.7.7.final-devel-docs/api/root-content.html
              |Display compile progress=Yes
              |Full-text search=Yes
              |Index file=index.hhk
